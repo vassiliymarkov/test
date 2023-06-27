@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    display: inline-block;
+    width: 100vw;
+    height: calc(100px + (300 - 100) * ((100vw - 100px) / (1920 - 320)));
+    background-image: linear-gradient(45deg, rgba(95,159,205,1) 0%, rgba(174,138,134,1) 50%, rgba(95,159,205,1) 100%);
+  }
+  .inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: transparent;
+    }
+  .inner * {
+    background: url(https://i1.wp.com/i.pinimg.com/originals/b1/53/1b/b1531b8d7df182324d8abc70496168f0.jpg);
+    -webkit-background-clip: text;
+  }
+  .first-line {
+    display: flex;
+    justify-content: center;
+    margin-top: calc(0px + (30 - 0) * ((100vw - 0px) / (1920 - 320)));
+    margin-left: auto;
+    font-size: calc(8px + (120 - 8) * ((100vw - 8px) / (1920 - 320)));
+    font-weight: 900;
+    letter-spacing: calc(0px + (10 - 0) * ((100vw - 0px) / (1920 - 320)));
+    width: 100%;
+  }
+  .reversed-r {
+    transform: scaleX(-1);
+    margin-left: calc(0px + (-10 - 0) * ((100vw - 0px) / (1920 - 320)));
+    border-right: 3px solid #050e8f;
+    letter-spacing: 0px;
+    font-size: calc(8px + (120 - 8) * ((100vw - 8px) / (1920 - 320)));
+    }
+  .reversed-e {
+    transform: scaleX(-1);
+    font-size: calc(8px + (120 - 8) * ((100vw - 8px) / (1920 - 320)));
+    /*margin-left: -30px;*/
+  }
+  .second-line {
+    font-size: calc(10px + (45 - 10) * ((100vw - 10px) / (1920 - 320)));
+    color: white;
+    letter-spacing: calc(0px + (10 - 0) * ((100vw - 0px) / (1920 - 320)));
+    opacity: 0.8;
+    margin-top: 10px;
+  }
+ 
+
+  
