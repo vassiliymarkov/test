@@ -1,26 +1,105 @@
 <!DOCTYPE html>
-<html lang="fr">
+
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    
+    <script src="https://kit.fontawesome.com/78197913c0.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/style.css">
+    <title>Eden Zéro Déchet - Formulaire d'inscription</title>
 </head>
 <body>
-    <header>
-        <div class="wrap">
-            <div class="inner">
-              <div class="first-line">ART GLASS VER<div class="reversed-r">R</div><div class="reversed-e">E</div></div>
-              <div class="second-line">boutique de décorations et bijoux</div>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="title">
+                    <img class="logo-img" src="img/Logo.png" alt="Logo Eden Zéro Déchet">
+                </div>
+                <div class="text">
+                    Eden Zéro Déchet
+                </div>
             </div>
-        </div>
-    </header>
-   
+            <nav>
+                <ul class="nav">
+                    <li><a class="nav-link" href="#"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a class="nav-link" href="#">boutique</a></li>
+                    <li><a class="nav-link" href="#">contact</a></li>
+                    <li><a class="nav-link" href="#">mon compte</a></li>
+                    <li><a class="nav-link" href="#">panier</a></li>
+                    <li><a class="nav-link" href="#"><i class="fa-solid fa-power-off"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="form-title">
+                <h2>Formulaire d'inscription</h2>
+                <p class="form-text">
+                    Veuillez remplir le formulaire. Tous les champs sont obligatoires
+                </p>
+            </div>
+            
+            <form class="sign-up" id="sign-up" action="inscreption.php">
+                <label class="form" for="lastname">Nom</label><br>    
+                <input class="form" type="text" id="lastname" name="lastName" placeholder="Nom" required><br>
+                
+                <label class="form" for="firstname">Prénom</label><br>    
+                <input class="form" type="text" id="firstname" name="firstName" placeholder="Prénom" required><br>
+                
+                <label class="form" for="mail">Mail</label><br>    
+                <input class="form" type="email" id="mail" name="mail" placeholder="Mail" required><br>
+                
+                <label class="form" for="number">N° de rue</label><br>
+                <input class="form" type="number" id="number" name="number" placeholder="N° de rue" required><br>
+               
+                <label class="form" for="street">Nom de rue</label><br>    
+                <input class="form" type="text" id="street" name="street" placeholder="Nom de rue" required><br>
+                
+                <label class="form" for="postcode">Code postal</label><br>
+                <input class="form" type="number" id="postcode" name="postcode" placeholder="Code postal" required><br>
+                             
+                <label class="form" for="city">Ville</label><br>
+                <select onclick="getCityByPostcode()" class="form" id="city" name="city" required>
+                
+                <label class="form" for="password">Mot de passe</label><br>    
+                <input class="form" type="password" id="password" name="password" placeholder="Mot de passe" required><br>
+                
+                <label class="form" for="pass">Confirmez votre passe</label><br>    
+                <input class="form" type="password" id="pass" name="pass" placeholder="Confirmez votre passe" required><br>
+                
+                <input class="send" type="submit" id="submit" value="Envoyer">
+            </form>
+        </main>
+
+        <footer>
+            <div class="first-line">
+                <div class="address">
+                    2 rue Minimes <br>
+                    72100 Le Mans
+                </div>
+                <div class="hours">
+                    Horaires : <br>
+                    du lundi à vendredi <br>
+                    du 9h à 20h
+                </div>
+                <div class="legal">
+                    <ul>
+                        <li><a class="footer-link" href="#"></a>ML</li>
+                        <li><a class="footer-link" href="#"></a>CGU</li>
+                        <li><a class="footer-link" href="#"></a>CGV</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second-line">
+                <i class="fa-regular fa-copyright"></i> Eden Zéro Déchet 2023
+            </div>
+        </footer>
+    </div>
+    
+    <script src="js/script.js"></script>
+    
 </body>
 </html>
