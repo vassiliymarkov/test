@@ -253,7 +253,7 @@ body._touch .menu-list > li._active .menu-arrow {
  .languages {
 	display: flex;
 	justify-content: space-between;
-	max-width: 55px;
+	width: 55px;
 }
 
 
