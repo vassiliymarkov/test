@@ -150,7 +150,7 @@ body._touch .menu-list > li._active .menu-arrow {
 }
 @media (max-width: 950px) {
 	.menu-wraper {
-		max-width: 10%;
+		max-width: 20%;
 	}
 	.menu-icon {
 		z-index: 5;
