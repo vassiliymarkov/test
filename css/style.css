@@ -149,6 +149,9 @@ body._touch .menu-list > li._active .menu-arrow {
 	}
 }
 @media (max-width: 950px) {
+	.menu-wraper {
+		max-width: 30%;
+	}
 	.menu-icon {
 		z-index: 5;
 		display: block;
