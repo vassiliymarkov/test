@@ -251,6 +251,7 @@ body._touch .menu-list > li._active .menu-arrow {
 	display: flex;
 	justify-content: space-between;
 	width: 55px;
+        margin-left: 10px;
 }
 
 
