@@ -134,7 +134,7 @@ body._touch .menu-arrow {
 	transition: transform 0.3s ease 0s;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-	border-top: 10px solid slategray;
+	border-top: 10px solid black;
 }
 body._touch .menu-list > li._active .menu-sublist {
 	opacity: 1;
