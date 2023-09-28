@@ -95,6 +95,9 @@ header {
 	color: rgb(165, 207, 250);
 	border-bottom: 2px solid rgb(165, 207, 250);
 }
+.menu-link.active {
+	color: coral;
+}
 .menu-sublist {
 	text-align: left;
     position: absolute;
@@ -122,6 +125,9 @@ header {
 }
 .menu-sublink:hover {
 	color: rgb(165, 207, 250);
+}
+.menu-sublink.active {
+	color: coral;
 }
 .menu-arrow {
 	display: none;
@@ -239,8 +245,6 @@ button:before {
 .content {
 	padding-top: 50px;
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	font-size: 24px;
 }
 main {
@@ -287,7 +291,6 @@ aside {
 	background-color: slategray;
 	color: #fff;
 	padding: 30px;
-	margin-top: 12px;
 	font-size: 28px;
 	font-weight: 600;
 	text-align: center;
@@ -317,6 +320,9 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	color: #000;
+}
+.footer-right {
+	text-align: right;
 }
 .footer-link {
 	color: rgb(165, 207, 250);
