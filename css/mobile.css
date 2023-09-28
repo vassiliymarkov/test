@@ -242,8 +242,7 @@
 	}
 	
 	aside {
-		border: 1px solid green;
-        width: 95%;
+		width: 95%;
         margin: 0 0 0 20px;
     }
 	.partners {
@@ -251,13 +250,18 @@
 		max-width: 100%;
 	}
 	.partners-title {
-		border: 1px solid red;
-        font-size: 22px;
+		font-size: 22px;
         margin: 12px auto 0 auto;
 		width: 100%;
     }
 	.partners-image {
 		width: 100%;
 		margin: 20px auto;
+	}
+	.footer-notes {
+		display: flex;
+		justify-content: space-between;
+		color: #000;
+		font-size: 14px;
 	}
 }
