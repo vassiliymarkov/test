@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	border: 0;
+	box-sizing: border-box;
 }
 *,*:before,*:after{
 	-moz-box-sizing: border-box;
@@ -92,13 +93,14 @@ header {
 	color: slategray;
 }
 .menu-link:hover {
-	color: rgb(165, 207, 250);
-	border-bottom: 2px solid rgb(165, 207, 250);
+	color: rgb(113, 177, 241);
+	border-bottom: 2px solid coral;
 }
 .menu-link.active {
 	color: coral;
 }
 .menu-sublist {
+	background-color: rgba(255, 255, 255, 0.85);
 	text-align: left;
     position: absolute;
     top: 100%;
@@ -171,7 +173,7 @@ body._touch .menu-list > li._active .menu-arrow {
 
 form {
 	position: relative;
-	width: 200px;
+	max-width: 300px;
 	height: 35px;
 }
 input {
@@ -216,21 +218,21 @@ button:before {
 	display: flex;
     justify-content: right;
     align-items: center;
-	padding: 0 30px 0 30px;
-	width: 50%;
-	/*z-index: -1;*/
+	padding: 0 50px 0 0px;
+	margin-right: 0;
+	width: 30%;
 }
 .social-links {
 	margin-right: 50px;
 }
 .fa-brands {
 	color: slategray;
-	font-size: 20px;
+	font-size: calc(20px + (32 - 20) * ((100vw - 992px) / (2250 - 992)));
 	margin-right: 10px;
 }
 #lang-en, #lang-ru, #lang-fr {
 	color: slategray;
-	font-size: 20px;
+	font-size: calc(20px + (32 - 20) * ((100vw - 992px) / (2250 - 992)));
     margin-left: 30px;
 }
 
@@ -281,6 +283,7 @@ p {
 
 aside {
 	width: 25%;
+	margin-right: 25px;
 }
 .partners {
 	position: -webkit-sticky; /* Safari */
