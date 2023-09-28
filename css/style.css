@@ -239,6 +239,8 @@ button:before {
 .content {
 	padding-top: 50px;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-size: 24px;
 }
 main {
@@ -286,6 +288,9 @@ aside {
 	color: #fff;
 	padding: 30px;
 	margin-top: 12px;
+	font-size: 28px;
+	font-weight: 600;
+	text-align: center;
 }
 .partners-image {
 	margin-top: 30px;
@@ -327,9 +332,12 @@ footer {
 	color: slategray;
 }
 .copyright {
-	margin: 15px auto;
+	margin: 25px auto;
 	width: 100%;
 	text-align: center;
+}
+#creator {
+	font-weight: 600;
 }
 /*** ||| MEDIA QUAERIES ||| ***/
 
