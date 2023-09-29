@@ -96,7 +96,7 @@ header {
 	color: rgb(113, 177, 241);
 	border-bottom: 2px solid coral;
 }
-.menu-link.active {
+.active {
 	color: coral;
 }
 .menu-sublist {
@@ -128,7 +128,7 @@ header {
 .menu-sublink:hover {
 	color: rgb(165, 207, 250);
 }
-.menu-sublink.active {
+.active {
 	color: coral;
 }
 .menu-arrow {
@@ -225,10 +225,19 @@ button:before {
 .social-links {
 	margin-right: 50px;
 }
+.subheader-link {
+	color: slategray;
+}
+.subheader-link:hover {
+	color: coral;
+}
 .fa-brands {
 	color: slategray;
 	font-size: calc(20px + (32 - 20) * ((100vw - 992px) / (2250 - 992)));
 	margin-right: 10px;
+}
+.languages-switchers a:hover {
+    color: coral !important;
 }
 #lang-en, #lang-ru, #lang-fr {
 	color: slategray;
@@ -348,6 +357,34 @@ footer {
 }
 #creator {
 	font-weight: 600;
+}
+
+.single-article {
+	margin-bottom: 50px;
+}
+.single-article p {
+	width: 90%;
+	margin-left: 30px;
+	/*text-align: center;*/
+}
+.subtitle {
+	font-weight: 600;
+}
+.single-article-image {
+	width: 90%;
+	margin: 0 30px 0 30px;
+	margin-bottom: 20px;
+}
+figcaption {
+	text-align: center;
+	font-size: 16px;
+	font-style: italic;
+	color: #000;
+	padding-bottom: 20px;
+}
+.text {
+	margin: 0 30px 0 0px;
+	text-align: justify;
 }
 /*** ||| MEDIA QUAERIES ||| ***/
 
