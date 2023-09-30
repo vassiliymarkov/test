@@ -53,3 +53,33 @@ if (iconMenu) {
 		menuBody.classList.toggle('_active');
 	});
 }
+
+
+
+
+let modal = document.getElementById("myModal");
+let modalImage = document.getElementById("modalImage");
+let images = document.querySelectorAll(".image-full"); // Предположим, что у вас есть класс "image" для изображений
+
+let span = document.getElementsByClassName("close")[0];
+
+for (let i = 0; i < images.length; i++) {
+  images[i].addEventListener("click", function(event) {
+    event.preventDefault();
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden";
+    modalImage.src = this.src;
+  });
+}
+
+span.addEventListener("click", function() {
+  modal.style.display = "none";
+  document.body.style.overflow = "auto";
+});
+
+window.addEventListener("click", function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+});
