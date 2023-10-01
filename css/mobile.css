@@ -169,6 +169,11 @@
         max-width: 70%;
         margin-left: 15px;
     }
+	 .main-static {
+		min-width: 95%;
+		margin-left: 25px;
+		
+	}
     .text {
         font-size: 20px;
     }
