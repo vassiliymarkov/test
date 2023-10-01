@@ -36,6 +36,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	color: #7F7D7D;
 }
+
 h2, h3 {
 	text-align: center;
 	margin-bottom: 30px;
@@ -61,6 +62,7 @@ header {
 	padding: 0 50px 0 50px;
 	width: 100%;
 	top: 0;
+	z-index: 2;
 }
 
 /*** MENU ***/
@@ -258,17 +260,31 @@ button:before {
 	display: flex;
 	font-size: 24px;
 }
+
 main {
 	width: 70%;
 	margin-left: 50px;
 }
+.main-static {
+	width: 95%;
+	position: relative;
+	margin-left: 50px;
+	margin-top: 150px;
+}
 article {
 	margin-bottom: 50px;
+}
+.article-static {
+	
 }
 article::after {
     content: "";
     display: table;
     clear: both;
+}
+
+.title-static {
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 .content-image {
@@ -280,6 +296,7 @@ article::after {
 .text {
 	margin: 0 30px 0 0px;
 	text-align: justify;
+	font-size: 26px;
 }
 p {
 	margin-bottom: 25px;
@@ -365,7 +382,6 @@ footer {
 .single-article p {
 	width: 90%;
 	margin-left: 30px;
-	/*text-align: center;*/
 }
 .subtitle {
 	font-weight: 600;
@@ -382,10 +398,7 @@ figcaption {
 	color: #000;
 	padding-bottom: 20px;
 }
-.text {
-	margin: 0 30px 0 0px;
-	text-align: justify;
-}
+
 /*** ||| MEDIA QUAERIES ||| ***/
 
 
@@ -431,4 +444,6 @@ figcaption {
 .close:hover {
     color: #ccc;
 }
+
+/***||| STATIC PAGES |||***/
 
