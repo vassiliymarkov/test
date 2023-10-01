@@ -222,7 +222,7 @@ button:before {
     align-items: center;
 	padding: 0 50px 0 0px;
 	margin-right: 0;
-	width: 30%;
+	width: 50%;
 }
 .social-links {
 	margin-right: 50px;
@@ -236,7 +236,7 @@ button:before {
 .fa-brands {
 	color: slategray;
 	font-size: calc(20px + (32 - 20) * ((100vw - 992px) / (2250 - 992)));
-	margin-right: 10px;
+	margin-right: 20px;
 }
 .languages-switchers a:hover {
     color: coral !important;
@@ -244,7 +244,7 @@ button:before {
 #lang-en, #lang-ru, #lang-fr {
 	color: slategray;
 	font-size: calc(20px + (32 - 20) * ((100vw - 992px) / (2250 - 992)));
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .logo {
@@ -270,23 +270,16 @@ main {
 	position: relative;
 	margin-left: 50px;
 	margin-top: 150px;
+	padding: 0;
 }
 article {
 	margin-bottom: 50px;
-}
-.article-static {
-	
 }
 article::after {
     content: "";
     display: table;
     clear: both;
 }
-
-.title-static {
-	background-color: rgba(255, 255, 255, 0.1);
-}
-
 .content-image {
 	float: left;
 	width: 50%;
@@ -296,7 +289,7 @@ article::after {
 .text {
 	margin: 0 30px 0 0px;
 	text-align: justify;
-	font-size: 26px;
+	/*font-size: 26px;*/
 }
 p {
 	margin-bottom: 25px;
