@@ -1,5 +1,7 @@
 "use strict"
 
+/*||| CHECKING DEVICE TYPE |||/ */
+
 const isMobile = {
 	Android: function () {
 		return navigator.userAgent.match(/Android/i);
@@ -26,6 +28,8 @@ const isMobile = {
 	}
 };
 
+/* IF MOBILE SHOW ARROW IN THE MENU */
+
 if (isMobile.any()) {
 	document.body.classList.add('_touch');
 
@@ -43,7 +47,8 @@ if (isMobile.any()) {
 	document.body.classList.add('_pc');
 }
 
-// Burger menu
+/*||| BURGER MENU |||*/
+
 const iconMenu = document.querySelector('.menu-icon');
 const menuBody = document.querySelector('.menu-body');
 if (iconMenu) {
@@ -55,13 +60,39 @@ if (iconMenu) {
 }
 
 
+/*||| ACTIVE LINKS |||*/
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Get current page url
+    let currentUrl = window.location.href;
+
+    // Get links fom upper menu
+    let menuLinks = document.querySelectorAll('.upper-menu a');
+
+    // Add class active to current page's link
+    menuLinks.forEach((link) => {
+        if (link.href === currentUrl || currentUrl.includes(link.dataset.category)) {
+            link.classList.add('active');
+        }
+    });
+
+    // If we have current category we highlight the link
+    let currentCategory = document.querySelector('.article-link').dataset.category;
+    if (currentCategory) {
+        let activeMenuLink = document.querySelector(`.menu-link[data-category="${currentCategory}"]`);
+        if (activeMenuLink) {
+            activeMenuLink.classList.add('active');
+        }
+    }
+});
+
+
+/*||| MODAL WINDOWS FOR IMAGES ||| */
 
 
 let modal = document.getElementById("myModal");
 let modalImage = document.getElementById("modalImage");
-let images = document.querySelectorAll(".image-full"); // Предположим, что у вас есть класс "image" для изображений
-
-let span = document.getElementsByClassName("close")[0];
+let images = document.querySelectorAll(".image-full");
 
 for (let i = 0; i < images.length; i++) {
   images[i].addEventListener("click", function(event) {
@@ -72,10 +103,13 @@ for (let i = 0; i < images.length; i++) {
   });
 }
 
-span.addEventListener("click", function() {
-  modal.style.display = "none";
-  document.body.style.overflow = "auto";
-});
+let span = document.querySelector('.close');
+if (span) {
+    span.addEventListener("click", function() {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+    });
+}
 
 window.addEventListener("click", function(event) {
   if (event.target == modal) {
@@ -83,3 +117,5 @@ window.addEventListener("click", function(event) {
     document.body.style.overflow = "auto";
   }
 });
+
+
